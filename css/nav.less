@@ -1,0 +1,32 @@
+.nav{
+  display:flex;
+  &__link{
+    color:white;
+    height:100px;
+    width:133px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    &:link{
+      text-decoration: none;
+    }
+    &:hover{
+      color:@yellow;
+    }
+    &--block{
+      animation: left 8s ease;
+      display: flex;
+      align-items: center;
+      border-bottom:1px solid @gray-thin;
+      @media (max-width: 550px){
+        width:300px;
+      }
+    }
+  }
+  //height:100%;
+}
