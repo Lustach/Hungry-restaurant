@@ -1,6 +1,6 @@
 .animation {
   &--left {
-    animation: text-shadow 3s;
+    animation: nav-left 3s;
   }
 
   &--right {
@@ -8,9 +8,25 @@
   }
 }
 
+@keyframes logo {
+  from {
+    top: 700px;
+    transform: rotate(360deg);
+    //margin-right: 100%;
+    //width: 300%;
+  }
+}
+
 @keyframes nav-right {
   from {
     margin-right: 100%;
+    width: 300%;
+  }
+}
+
+@keyframes nav-left {
+  from {
+    margin-left: 100%;
     width: 300%;
   }
 }

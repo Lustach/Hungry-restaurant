@@ -12,11 +12,13 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
+    text-transform: uppercase;
     &:link{
       text-decoration: none;
     }
-    &:hover{
-      color:@yellow;
+    &:active,&:focus,&:hover{
+      box-shadow: 0 0 10px @yellow;
+      color: @yellow;
     }
     &--block{
       animation: left 8s ease;
@@ -28,5 +30,4 @@
       }
     }
   }
-  //height:100%;
 }
