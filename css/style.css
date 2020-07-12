@@ -4,6 +4,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: black;
+  overflow-x: hidden;
 }
 body.no-scroll {
   overflow: hidden;
@@ -30,6 +31,7 @@ html {
   align-items: center;
   position: relative;
   height: calc(100vh - 101px);
+  animation: opacity 8s ease-out;
 }
 .intro__schedule {
   transform: rotate(-90deg);
@@ -43,7 +45,7 @@ html {
   transition: border 1s ease;
   content: '';
   border: 1px solid rgba(255, 255, 255, 0.2);
-  height: calc(100vh - 190px);
+  height: calc(100vh - 290px);
   top: 13%;
   display: block;
   left: 50%;
@@ -180,6 +182,18 @@ html {
   background-color: #E8C300;
   box-shadow: 0 0 10px rgba(232, 195, 0, 0.8);
 }
+.animation--left {
+  animation: text-shadow 3s;
+}
+.animation--right {
+  animation: nav-right 3s;
+}
+@keyframes nav-right {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+}
 @keyframes text-shadow {
   from {
     margin-left: 100%;
@@ -217,6 +231,11 @@ html {
     margin-top: 40%;
     background-color: #E8C300;
     box-shadow: 0 0 10px rgba(232, 195, 0, 0.8);
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0.1;
   }
 }
 .text-center {
